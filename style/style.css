@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  visibility: hidden;
+  position: relative;
+  overflow: hidden;
+}
+
+.container > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20vh;
+}
+
+.container > span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10vh;
+}
+
+.balloons img {
+  display: inline-block;
+  position: absolute;
+}
+
+.balloons img:nth-child(even) {
+  left: -10%;
+}
+
+.balloons img:nth-child(odd) {
+  right: -10%;
+}
+
+.balloons img:nth-child(3n + 0) {
+  left: 30%;
+}
